@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书列表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 120%;
+            background-image: linear-gradient(to right,#8df4a4,#6d4fd8);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 70px;
+        }
+        .header2 {
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+        }
+        .text {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+        }
+        table{
+            background-color:rgba(255,255,255,0.1);
+            border: 3px solid white;
+            margin: auto;
+            width: 50%;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border:2px solid white;
+
+        }
+        .td{
+            width:300px;
+            height: 300px;
+        }
+        .th{
+            width:300px;
+            height: 50px;
+        }
+        .btn {
+            text-align: center;
+            font-size: 40px;
+            padding: 50px;
+            width: 600px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #6d4fd8, #8df4a4);
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">图书列表</div>
+        <p>
+
+        </p>
+        <table>
+            <tr height="100">
+                <th class="th"><div class="header2">封面</div></th>
+                <th class="th"><div class="header2">图书名称</div></th>
+                <th class="th"><div class="header2">作者</div></th>
+                <th class="th"><div class="header2">出版社</div></th>
+                <th class="th"><div class="header2">出版日期</div></th>
+                <th class="th"><div class="header2">库存数量</div></th>
+            </tr>
+            <tr height="100">
+                <td class="td"><img src="./img/fengmian1.png" width="300" height="300"></td>
+                <td class="td"><div class="text">名称1</div></td>
+                <td class="td"><div class="text">作者1</div></td>
+                <td class="td"><div class="text">出版社1</div></td>
+                <td class="td"><div class="text">出版日期1</div></td>
+                <td class="td"><div class="text">库存数量1</div></td>
+            </tr>
+            <tr height="100">
+                <td class="td"><img src="./img/fengmian2.png" width="300" height="300"></td>
+                <td class="td"><div class="text">名称2</div></td>
+                <td class="td"><div class="text">作者2</div></td>
+                <td class="td"><div class="text">出版社2</div></td>
+                <td class="td"><div class="text">出版日期2</div></td>
+                <td class="td"><div class="text">库存数量2</div></td>
+            </tr>
+            <tr height="100">
+                <td class="td"><img src="./img/fengmian3.png" width="300" height="300"></td>
+                <td class="td"><div class="text">名称3</div></td>
+                <td class="td"><div class="text">作者3</div></td>
+                <td class="td"><div class="text">出版社3</div></td>
+                <td class="td"><div class="text">出版日期3</div></td>
+                <td class="td"><div class="text">库存数量3</div></td>
+            </tr>
+            <tr height="100">
+                <td class="td"><img src="./img/fengmian4.png" width="300" height="300"></td>
+                <td class="td"><div class="text">名称4</div></td>
+                <td class="td"><div class="text">作者4</div></td>
+                <td class="td"><div class="text">出版社4</div></td>
+                <td class="td"><div class="text">出版日期4</div></td>
+                <td class="td"><div class="text">库存数量4</div></td>
+            </tr>
+        </table>
+        <div id="footer">
+            <a href="newbooks.html">
+                 <div class="btn">添加新书</div>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

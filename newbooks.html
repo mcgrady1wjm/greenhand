@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新书</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 120%;
+            background-image: linear-gradient(to right,#8df4a4,#6d4fd8);
+            margin: 0;
+            padding: 0;
+        }
+        .newbook-wrapper {
+            background-color: #fff;
+            width: 450px;
+            height: 700px;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 38px;
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128, 125, 125);
+            font-size: 15px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="newbook-wrapper">
+                上传封面<input type="file" id="file" name="upload_image" accept="image/gif, image/jpeg, image/png, image/jpg"><br>
+                书名: <input type="text" name="name" required><br>
+                作者: <input type="text" name="author" required><br>
+                出版社: <input type="text" name="publisher" required><br>
+                出版时间: <input type="date" name="publisher" max="2022-10-23" required><br>
+                库存数量: <input type="number" name="amount" min="0" required><br>
+                <input type="submit" value="提交">
+            </div>
+            </div>
+</body>
+</html>
